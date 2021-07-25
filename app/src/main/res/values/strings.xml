@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Macro Grocery Guide</string>
+    <string name="proteinTextView">Protein</string>
+    <string name="view_protein">View Protein</string>
+    <string name="view_fats">View Fats</string>
+    <string name="view_carbs">View Carbs</string>
+    <string name="add_protein_button">Add Protein</string>
+    <string name="app_title">Macro Nutrient Guide</string>
+    <string name="bodyInfoTextView">Body Information</string>
+    <string name="maleRadioButton">Male</string>
+    <string name="femaleRadioButton">Female</string>
+
+
+</resources>

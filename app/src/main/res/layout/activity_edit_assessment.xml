@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72FFC107"
+    >
+
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="185dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Weight in lbs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageEditText"
+        android:layout_marginRight="128dp" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="185dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Height in inches"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightEditText"
+        android:layout_marginRight="128dp" />
+
+    <RadioGroup
+        android:id="@+id/goals"
+        android:layout_width="385dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palRadioGroup">
+
+
+        <RadioButton
+            android:id="@+id/loseRadioButton"
+            android:layout_width="385dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="Lose Weight"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/maintainRadioButton"
+            android:layout_width="385dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="Maintain Current Weight"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/gainRadioButton"
+            android:layout_width="385dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="Gain Weight"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/bodyInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="112dp"
+        android:text="Edit Body Information"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="112dp" />
+
+    <RadioGroup
+        android:id="@+id/palRadioGroup"
+        android:layout_width="350dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightEditText">
+
+
+        <RadioButton
+            android:id="@+id/sedentaryRadioButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Sedentary"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/lightActiveRadioButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="Light Activity"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/modActiveRadioButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="Moderate Activity"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/heavyActiveRadioButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="Heavy Activity"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="185dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Age in years"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bodyInfoTextView"
+        android:layout_marginRight="128dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

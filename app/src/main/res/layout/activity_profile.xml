@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/tableRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nameTextView">
+
+        <TableLayout
+            android:id="@+id/macroTotalsTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/dailyMacroTotalsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Daily Macro Totals" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/dCaloriesTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Calories:"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/dCaloriesTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/dProteinTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Protein:" />
+
+                <TextView
+                    android:id="@+id/dProteinTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/dFatsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Fats:" />
+
+                <TextView
+                    android:id="@+id/dFatsTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/dCarbsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Carbs:" />
+
+                <TextView
+                    android:id="@+id/dCarbsTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/weeklyMacroTotalsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Weekly Macro Totals" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/wCaloriesTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Calories:"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/wCaloriesTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/wProteinTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Protein:" />
+
+                <TextView
+                    android:id="@+id/wProteinTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/wFatsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Fats:" />
+
+                <TextView
+                    android:id="@+id/wFatsTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/wCarbsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Carbs:" />
+
+                <TextView
+                    android:id="@+id/wCarbsTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/macroSubTotalsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Grocery Guide Macro Totals" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/subCaloriesTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Calories:" />
+
+                <TextView
+                    android:id="@+id/subCaloriesTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/subProteinTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Protein:" />
+
+                <TextView
+                    android:id="@+id/subProteinTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/subFatsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Fats:" />
+
+                <TextView
+                    android:id="@+id/subFatsTotalTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/subCarbsTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="Carbs:" />
+
+                <TextView
+                    android:id="@+id/subCarbsTotalsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:layout_marginRight="4dp" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/macroTotalsTableLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/background"
+            >
+            <Button
+                android:id="@+id/weightEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Assessment"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"/>
+            <Button
+                android:id="@+id/nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="main menu"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
